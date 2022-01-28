@@ -1,21 +1,14 @@
 import React from "react";
 
 function App() {
-  /* 
-          S   T   A   N
-
-          On Tuesday just resume the the video.
-          You left off on "destructing" introduction.
-          This has to do w/ dealing with the strange
-          syntax of state.[0]
-
-          BTW, the code currently runs. 
-
-*/
-
   //const state = React.useState(323);
   const [count, setCount] = React.useState(0);
   console.log("count: " + count);
+
+  /*  <EXPERIMENT> */
+  const [state, setState] = React.useState(99);
+  console.log("state=" + state);
+  /*  </EXERIMENT> */
 
   ////////////////////////////////////////////////////
   // const rgb = [9,32,227];  ...then deconstruct into
